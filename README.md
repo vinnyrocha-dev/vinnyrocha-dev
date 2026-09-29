@@ -4,9 +4,9 @@
 
 🎓 Estou cursando **Análise e Desenvolvimento de Sistemas** na Universidade Veiga de Almeida (UVA).
 
-💻 Complemento minha formação com o curso **Profissão: Especialista Back-End Java** da EBAC.
+💻 Complemento minha formação estudando **Java**, **desenvolvimento Back-End e também Front-End**, com o objetivo de atuar tanto no **back-end** quanto no **front-end**.
 
-📚 Meus estudos têm foco em desenvolvimento back-end, lógica de programação, APIs e boas práticas de programação.
+📚 Meus estudos têm foco em Java, lógica de programação, APIs, banco de dados e desenvolvimento web, sempre buscando aplicar boas práticas de programação.
 
 🚀 Estou em busca da minha primeira oportunidade na área de tecnologia, onde possa aplicar meus conhecimentos, contribuir com projetos e continuar evoluindo como desenvolvedor.
 
@@ -39,5 +39,5 @@
 
 ## 📫 Contato
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/SEU_PERFIL)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:SEU_EMAIL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vinipache/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:viniciusgp45@gmail.com)
