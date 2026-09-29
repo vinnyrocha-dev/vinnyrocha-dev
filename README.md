@@ -29,15 +29,7 @@
 
 ---
 
-## 📂 Projetos em destaque
-
-| Projeto | Descrição |
-|---|---|
-| [📇 Cadastro de Clientes com DAO](https://github.com/vinnyrocha-dev/cadastro-clientes-dao-java) | CRUD de clientes em Java aplicando o padrão DAO e separação em camadas |
-
----
-
 ## 📫 Contato
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vinipache/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:viniciusgp45@gmail.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](viniciusgp45@gmail.com)
