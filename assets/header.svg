@@ -1,22 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="1000" height="240" role="img" aria-label="Vinicius Rocha Pacheco, Desenvolvedor Back-End Java em formação">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="Vinicius Rocha Pacheco, Estudante de Análise e Desenvolvimento de Sistemas">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1220"/>
       <stop offset="0.55" stop-color="#0d1b2a"/>
       <stop offset="1" stop-color="#0a2a33"/>
     </linearGradient>
+
+    <!-- brilho que passa por cima do nome -->
+    <linearGradient id="nomeBrilho" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="400" y2="0">
+      <stop offset="0" stop-color="#f1f5f9"/>
+      <stop offset="0.45" stop-color="#f1f5f9"/>
+      <stop offset="0.5" stop-color="#67e8f9"/>
+      <stop offset="0.55" stop-color="#f1f5f9"/>
+      <stop offset="1" stop-color="#f1f5f9"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-400 0; 1000 0; 1000 0" keyTimes="0;0.55;1" dur="5s" begin="1.6s" repeatCount="indefinite"/>
+    </linearGradient>
+
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#06b6d4"/>
       <stop offset="1" stop-color="#3b82f6"/>
     </linearGradient>
+
+    <linearGradient id="onda1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+
     <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="1.2" fill="#1e3a4a"/>
     </pattern>
-    <radialGradient id="glow" cx="0.85" cy="0.2" r="0.6">
-      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.22"/>
+
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.28"/>
       <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
     </radialGradient>
+
+    <clipPath id="card">
+      <rect width="1000" height="280" rx="14"/>
+    </clipPath>
+
     <style>
+      .sans { font-family: Arial, Helvetica, "Liberation Sans", sans-serif; }
+      .mono { font-family: "JetBrains Mono", "Fira Code", Consolas, "Courier New", monospace; }
+      .nome { font: 700 46px Arial, Helvetica, "Liberation Sans", sans-serif; fill: url(#nomeBrilho); }
+
+      /* entrada: aparece e sobe */
       .sobe {
         opacity: 0;
         transform-box: fill-box;
@@ -27,46 +55,129 @@
       .d2 { animation-delay: 0.5s; }
       .d3 { animation-delay: 0.75s; }
       .d4 { animation-delay: 1.15s; }
-      .d5 { animation-delay: 1.55s; }
-      .brace { opacity: 0; animation: aparece 1.6s ease forwards 0.3s; }
-      .bar {
-        transform-box: fill-box;
-        transform-origin: left center;
-        transform: scaleX(0);
-        animation: cresce 1s cubic-bezier(.2,.7,.2,1) forwards 1s;
-      }
-      .cursor { animation: pisca 1s steps(1) infinite; }
       @keyframes sobe {
         from { opacity: 0; transform: translateY(26px); }
         to   { opacity: 1; transform: translateY(0); }
       }
-      @keyframes aparece { to { opacity: 1; } }
+
+      /* barra que cresce do centro */
+      .bar {
+        transform-box: fill-box;
+        transform-origin: center;
+        transform: scaleX(0);
+        animation: cresce 1s cubic-bezier(.2,.7,.2,1) forwards 1s;
+      }
       @keyframes cresce { to { transform: scaleX(1); } }
+
+      /* tecnologias aparecendo e sumindo em ciclo */
+      .tech {
+        opacity: 0;
+        transform-box: fill-box;
+        animation: ciclo 10s ease-in-out infinite both;
+      }
+      .t1 { animation-delay: 1.8s; }
+      .t2 { animation-delay: 4.3s; }
+      .t3 { animation-delay: 6.8s; }
+      .t4 { animation-delay: 9.3s; }
+      @keyframes ciclo {
+        0%   { opacity: 0; transform: translateY(14px); }
+        5%   { opacity: 1; transform: translateY(0); }
+        20%  { opacity: 1; transform: translateY(0); }
+        25%  { opacity: 0; transform: translateY(-14px); }
+        100% { opacity: 0; transform: translateY(-14px); }
+      }
+
+      /* ondas se movendo */
+      .onda1 { animation: anda 9s linear infinite; }
+      .onda2 { animation: anda 14s linear infinite reverse; }
+      @keyframes anda {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-1000px); }
+      }
+
+      /* brilho de fundo pulsando */
+      .pulsa { animation: pulsa 5s ease-in-out infinite; }
+      @keyframes pulsa {
+        0%, 100% { opacity: 0.6; }
+        50%      { opacity: 1; }
+      }
+
+      /* partículas e símbolos subindo */
+      .p { opacity: 0; animation: flutua 7s linear infinite; }
+      @keyframes flutua {
+        0%   { opacity: 0; transform: translateY(0); }
+        15%  { opacity: 0.8; }
+        80%  { opacity: 0.4; }
+        100% { opacity: 0; transform: translateY(-170px); }
+      }
+      .s { opacity: 0; animation: flutuaSimbolo 11s ease-in-out infinite; }
+      @keyframes flutuaSimbolo {
+        0%   { opacity: 0; transform: translateY(20px); }
+        20%  { opacity: 0.35; }
+        80%  { opacity: 0.35; }
+        100% { opacity: 0; transform: translateY(-60px); }
+      }
+
+      .cursor { animation: pisca 1s steps(1) infinite; }
       @keyframes pisca { 50% { fill-opacity: 0; } }
-      .nome { font: 700 46px Arial, Helvetica, "Liberation Sans", sans-serif; fill: #f1f5f9; }
-      .sans { font-family: Arial, Helvetica, "Liberation Sans", sans-serif; }
-      .mono { font-family: "JetBrains Mono", "Fira Code", Consolas, "Courier New", monospace; }
     </style>
   </defs>
 
-  <rect width="1000" height="240" rx="14" fill="url(#bg)"/>
-  <rect width="1000" height="240" rx="14" fill="url(#dots)" opacity="0.6"/>
-  <rect width="1000" height="240" rx="14" fill="url(#glow)"/>
+  <g clip-path="url(#card)">
+    <rect width="1000" height="280" fill="url(#bg)"/>
+    <rect width="1000" height="280" fill="url(#dots)" opacity="0.6"/>
+    <rect class="pulsa" width="1000" height="280" fill="url(#glow)"/>
 
-  <!-- chaves decorativas -->
-  <text class="brace mono" x="940" y="178" text-anchor="end" font-size="150" font-weight="700" fill="#22d3ee" fill-opacity="0.12">{ }</text>
+    <!-- símbolos de código flutuando nas laterais -->
+    <g class="mono" font-size="26" font-weight="700" fill="#22d3ee">
+      <text class="s" x="60"  y="215" style="animation-delay:0s">{ }</text>
+      <text class="s" x="880" y="215" style="animation-delay:2.5s">&lt;/&gt;</text>
+      <text class="s" x="115" y="125" style="animation-delay:5s" font-size="20">@Bean</text>
+      <text class="s" x="815" y="95" style="animation-delay:7s" font-size="20">SELECT *</text>
+      <text class="s" x="28"  y="255" style="animation-delay:8.5s" font-size="22">;</text>
+      <text class="s" x="935" y="262" style="animation-delay:4s" font-size="22">( )</text>
+    </g>
 
-  <!-- prompt -->
-  <text class="sobe d0 mono" x="60" y="52" font-size="15" fill="#22d3ee">~/vinnyrocha-dev <tspan fill="#64748b">$ whoami</tspan></text>
+    <!-- partículas subindo -->
+    <g fill="#67e8f9">
+      <circle class="p" cx="110" cy="260" r="2"   style="animation-delay:0s"/>
+      <circle class="p" cx="260" cy="270" r="1.5" style="animation-delay:1.2s"/>
+      <circle class="p" cx="340" cy="255" r="2.5" style="animation-delay:3.1s"/>
+      <circle class="p" cx="480" cy="268" r="1.5" style="animation-delay:4.4s"/>
+      <circle class="p" cx="620" cy="262" r="2"   style="animation-delay:2.2s"/>
+      <circle class="p" cx="710" cy="272" r="1.5" style="animation-delay:5.6s"/>
+      <circle class="p" cx="840" cy="258" r="2.5" style="animation-delay:0.8s"/>
+      <circle class="p" cx="950" cy="266" r="1.5" style="animation-delay:3.8s"/>
+      <circle class="p" cx="560" cy="275" r="2"   style="animation-delay:6.3s"/>
+      <circle class="p" cx="190" cy="275" r="2"   style="animation-delay:5s"/>
+    </g>
 
-  <!-- nome: cada palavra aparece e sobe -->
-  <text class="nome sobe d1" x="60" y="115">Vinicius</text>
-  <text class="nome sobe d2" x="250" y="115">Rocha</text>
-  <text class="nome sobe d3" x="405" y="115">Pacheco</text>
+    <!-- ondas animadas no rodapé do banner -->
+    <g class="onda2" opacity="0.35">
+      <path fill="#3b82f6" d="M0 248 Q125 228 250 248 T500 248 T750 248 T1000 248 T1250 248 T1500 248 T1750 248 T2000 248 V280 H0 Z"/>
+    </g>
+    <g class="onda1" opacity="0.55">
+      <path fill="url(#onda1)" d="M0 258 Q125 242 250 258 T500 258 T750 258 T1000 258 T1250 258 T1500 258 T1750 258 T2000 258 V280 H0 Z"/>
+    </g>
 
-  <rect class="bar" x="60" y="134" width="534" height="4" rx="2" fill="url(#accent)"/>
+    <!-- prompt -->
+    <text class="sobe d0 mono" x="500" y="48" text-anchor="middle" font-size="15" fill="#22d3ee">~/vinnyrocha-dev <tspan fill="#64748b">$ whoami</tspan><tspan class="cursor" fill="#22d3ee"> _</tspan></text>
 
-  <text class="sobe d4 sans" x="60" y="172" font-size="21" fill="#cbd5e1">Desenvolvedor Back-End Java em formação</text>
+    <!-- nome centralizado: cada palavra aparece e sobe -->
+    <text class="nome sobe d1" x="233" y="112">Vinicius</text>
+    <text class="nome sobe d2" x="423" y="112">Rocha</text>
+    <text class="nome sobe d3" x="578" y="112">Pacheco</text>
 
-  <text class="sobe d5 mono" x="60" y="207" font-size="15" fill="#67e8f9">Java · Spring Boot · PostgreSQL · APIs REST</text>
+    <rect class="bar" x="233" y="131" width="534" height="4" rx="2" fill="url(#accent)"/>
+
+    <text class="sobe d4 sans" x="500" y="170" text-anchor="middle" font-size="21" fill="#cbd5e1">Estudante de Análise e Desenvolvimento de Sistemas</text>
+
+    <!-- tecnologias em ciclo -->
+    <g class="mono" font-size="19" font-weight="700" fill="#67e8f9" text-anchor="middle">
+      <text class="tech t1" x="500" y="212">&lt; Java /&gt;</text>
+      <text class="tech t2" x="500" y="212">&lt; Spring Boot /&gt;</text>
+      <text class="tech t3" x="500" y="212">&lt; PostgreSQL /&gt;</text>
+      <text class="tech t4" x="500" y="212">&lt; APIs REST /&gt;</text>
+    </g>
+  </g>
 </svg>
