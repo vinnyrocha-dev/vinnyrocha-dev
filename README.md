@@ -16,19 +16,17 @@
 
 ## 👨‍💻 Sobre mim
 
-👋 Meu nome é **Vinicius Rocha Pacheco**, tenho 29 anos e sou do Rio de Janeiro.
+👋 Olá! Sou **Vinicius Rocha Pacheco**, tenho 29 anos, moro no Rio de Janeiro e estou em transição de carreira para a área de tecnologia.
 
-🎓 Estou cursando **Análise e Desenvolvimento de Sistemas** na Universidade Veiga de Almeida (UVA).
+🎓 Curso **Análise e Desenvolvimento de Sistemas** na Universidade Veiga de Almeida (UVA).
 
-💻 Complemento minha formação estudando **Java** e **desenvolvimento Back-End**, com o objetivo de atuar como desenvolvedor **back-end**.
+☕ Meu foco é o **desenvolvimento Back-End com Java**: lógica de programação, orientação a objetos, APIs e banco de dados.
 
-📚 Meus estudos têm foco em Java, lógica de programação, APIs, banco de dados e desenvolvimento, sempre buscando aplicar boas práticas de programação.
+🌱 No momento estou aprendendo **Spring Boot** para construir **APIs REST** e usando **PostgreSQL** como banco de dados.
 
-🌱 No momento estou aprendendo **Spring Boot** para construir APIs REST e **PostgreSQL** como banco de dados.
+🧩 Nos meus projetos já apliquei **POO**, **padrão DAO**, **Generics** e **separação em camadas**, sempre buscando escrever um código limpo e bem organizado.
 
-🧩 Nos meus projetos já pratiquei **POO**, **padrão DAO**, **Generics** e **separação em camadas**.
-
-🚀 Estou em busca da minha primeira oportunidade na área de tecnologia, onde possa aplicar meus conhecimentos, contribuir com projetos e continuar evoluindo como desenvolvedor.
+🚀 Procuro minha **primeira oportunidade como desenvolvedor Back-End**, seja em estágio ou vaga júnior, onde eu possa contribuir com projetos reais e continuar evoluindo.
 
 <br>
 
@@ -42,20 +40,15 @@
 <br>
 <img src="https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
 <img src="https://img.shields.io/badge/-SQL-336791?style=flat-square&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css&logoColor=white"/>
 
 <br><br>
 
 **Frameworks e ferramentas**
 <br>
 <img src="https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
 <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white"/>
 <img src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
-<img src="https://img.shields.io/badge/-IntelliJ%20IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Postman-FF6C37?style=flat-square&logo=postman&logoColor=white"/>
 
 </div>
 
@@ -114,7 +107,7 @@
 <div align="center">
 
 <a href="https://www.linkedin.com/in/vinipache/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/></a>
-<a href="https://vinnyrocha-dev.github.io/" target="_blank"><img src="https://img.shields.io/badge/-Portf%C3%B3lio-0891B2?style=flat-square&logo=googlechrome&logoColor=white"/></a>
+<a href="https://vinnyrocha-dev.github.io/links/" target="_blank"><img src="https://img.shields.io/badge/-Portf%C3%B3lio-0891B2?style=flat-square&logo=googlechrome&logoColor=white"/></a>
 <a href="mailto:viniciusgp45@gmail.com"><img src="https://img.shields.io/badge/-E--mail-EA4335?style=flat-square&logo=gmail&logoColor=white"/></a>
 
 </div>
