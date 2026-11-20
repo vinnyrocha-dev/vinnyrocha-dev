@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 130" width="1000" height="130" role="img" aria-label="Obrigado pela visita">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2a33"/>
+      <stop offset="0.5" stop-color="#0d1b2a"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="linha" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="digita">
+      <rect x="0" y="0" width="0" height="130">
+        <animate attributeName="width" from="0" to="1000" dur="2.4s" begin="0.4s" fill="freeze" calcMode="discrete"
+          values="0;84;108;132;156;180;204;228;252;276;300;324;348;372;396;420;444;468;492;516;540;1000"
+          keyTimes="0;0.048;0.095;0.143;0.190;0.238;0.286;0.333;0.381;0.429;0.476;0.524;0.571;0.619;0.667;0.714;0.762;0.810;0.857;0.905;0.952;1"/>
+      </rect>
+    </clipPath>
+    <style>
+      .mono { font-family: "JetBrains Mono", "Fira Code", Consolas, "Courier New", monospace; }
+      .cursor { animation: pisca 1s steps(1) infinite; }
+      @keyframes pisca { 50% { opacity: 0; } }
+      .brilho { animation: corre 4s linear infinite; }
+      @keyframes corre {
+        from { transform: translateX(-1000px); }
+        to   { transform: translateX(1000px); }
+      }
+    </style>
+  </defs>
+
+  <rect width="1000" height="130" rx="14" fill="url(#bg)"/>
+
+  <!-- linha de luz que percorre o topo -->
+  <rect x="0" y="0" width="1000" height="2" fill="#0e7490" opacity="0.5"/>
+  <rect class="brilho" x="0" y="0" width="1000" height="2" fill="url(#linha)"/>
+
+  <!-- três pontinhos de terminal -->
+  <circle cx="34" cy="28" r="5" fill="#334155"/>
+  <circle cx="52" cy="28" r="5" fill="#334155"/>
+  <circle cx="70" cy="28" r="5" fill="#334155"/>
+
+  <!-- comando sendo digitado -->
+  <g clip-path="url(#digita)">
+    <text class="mono" x="60" y="78" font-size="20" fill="#22d3ee">$ <tspan fill="#e2e8f0">git commit -m</tspan> <tspan fill="#67e8f9">"obrigado pela visita!"</tspan></text>
+  </g>
+  <rect class="cursor" x="60" y="61" width="11" height="22" fill="#22d3ee">
+    <animate attributeName="x" dur="2.4s" begin="0.4s" fill="freeze" calcMode="discrete" values="60;84;108;132;156;180;204;228;252;276;300;324;348;372;396;420;444;468;492;516;540;534" keyTimes="0;0.048;0.095;0.143;0.190;0.238;0.286;0.333;0.381;0.429;0.476;0.524;0.571;0.619;0.667;0.714;0.762;0.810;0.857;0.905;0.952;1"/>
+  </rect>
+
+  <text class="mono" x="60" y="108" font-size="13" fill="#64748b">// até a próxima. bora codar ☕</text>
+</svg>
