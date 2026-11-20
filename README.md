@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="./assets/header.svg" alt="Vinicius Rocha Pacheco, Desenvolvedor Back-End Java em formação"/>
+<img width="100%" src="./assets/header.svg" alt="Vinicius Rocha Pacheco, Estudante de Análise e Desenvolvimento de Sistemas"/>
 
 <br><br>
 
